@@ -2,11 +2,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const directory = './rename_this';
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
 async function renameFiles() {
     try {
         let files = await fs.readdir(directory);
